@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url:  jdbc:mysql://localhost:3306/blog?useUnicode=true&characterEncoding=utf-8
+    username: levi
+    password: Levi@montage1314
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: false
+    properties:
+      hibernate:
+        enable_lazy_load_no_trans: true
+logging:
+  level:
+    root: warn
+    com.levdev: info
+  file: log/blog-pro.log
+
+server:
+  port: 8081
